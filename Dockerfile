@@ -2,4 +2,6 @@ FROM docker-dev.artifactory.tools.roku.com/nikolaik/python-nodejs:python3.10-nod
 
 RUN npm install -g aws-cdk
 
+RUN pip install awscli
+
 ENTRYPOINT [ "sh" ]
